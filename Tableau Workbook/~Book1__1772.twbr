@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sql_data_export' inline='true' name='federated.1teig920ircbik13nqmgx16vvp6m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sql_data_export' name='textscan.0pfoicr19mzxwg1d9umnp0nrj8ek'>
+            <connection class='textscan' directory='C:/Users/Kamo/PROJECTS/Ride_Price_Prediction/data' filename='sql_data_export.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0pfoicr19mzxwg1d9umnp0nrj8ek' name='sql_data_export.csv' table='[sql_data_export#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='TRIP_DURATION' ordinal='0' />
+            <column datatype='integer' name='DISTANCE_TRAVELED' ordinal='1' />
+            <column datatype='integer' name='NUM_OF_PASSENGERS' ordinal='2' />
+            <column datatype='integer' name='FARE' ordinal='3' />
+            <column datatype='integer' name='TIP' ordinal='4' />
+            <column datatype='integer' name='MISCELLANEOUS_FEES' ordinal='5' />
+            <column datatype='integer' name='TOTAL_FARE' ordinal='6' />
+            <column datatype='integer' name='SURGE_APPLIED' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRIP_DURATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRIP_DURATION]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>TRIP_DURATION</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISTANCE_TRAVELED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DISTANCE_TRAVELED]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>DISTANCE_TRAVELED</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUM_OF_PASSENGERS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUM_OF_PASSENGERS]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>NUM_OF_PASSENGERS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FARE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FARE]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>FARE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TIP]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>TIP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MISCELLANEOUS_FEES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MISCELLANEOUS_FEES]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>MISCELLANEOUS_FEES</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL_FARE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL_FARE]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>TOTAL_FARE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SURGE_APPLIED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SURGE_APPLIED]</local-name>
+            <parent-name>[sql_data_export.csv]</parent-name>
+            <remote-alias>SURGE_APPLIED</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='SURGE' datatype='string' name='[Calculation_124693460575907843]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [SURGE_APPLIED] = 1 THEN &quot;YES&quot;&#13;&#10;ELSE &quot;NO&quot;&#13;&#10;END' />
+      </column>
+      <column caption='INDEX' datatype='integer' name='[Calculation_124693460577681412]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Distance Traveled' datatype='integer' name='[DISTANCE_TRAVELED]' role='measure' type='quantitative' />
+      <column caption='Fare' datatype='integer' name='[FARE]' role='measure' type='quantitative' />
+      <column caption='Miscellaneous Fees' datatype='integer' name='[MISCELLANEOUS_FEES]' role='measure' type='quantitative' />
+      <column caption='Num Of Passengers' datatype='integer' name='[NUM_OF_PASSENGERS]' role='measure' type='quantitative' />
+      <column caption='Surge Applied' datatype='integer' name='[SURGE_APPLIED]' role='measure' type='quantitative' />
+      <column caption='Total Fare' datatype='integer' name='[TOTAL_FARE]' role='measure' type='quantitative' />
+      <column caption='Trip Duration' datatype='integer' name='[TRIP_DURATION]' role='measure' type='quantitative' />
+      <column caption='sql_data_export.csv' datatype='table' name='[__tableau_internal_object_id__].[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]' role='measure' type='quantitative' />
+      <column-instance column='[NUM_OF_PASSENGERS]' derivation='None' name='[none:NUM_OF_PASSENGERS:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SURGE_APPLIED]' derivation='None' name='[none:SURGE_APPLIED:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[TOTAL_FARE]' derivation='None' name='[none:TOTAL_FARE:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Num Of Passengers,Total Fare)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:NUM_OF_PASSENGERS:qk]' />
+          <groupfilter function='level-members' level='[none:TOTAL_FARE:qk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Kamo/AppData/Local/Temp/TableauTemp/#TableauTemp_0pe5ifv1ymzzs117d1pkw19il0ny.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/24/2025 11:08:54 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>TRIP_DURATION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TRIP_DURATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TRIP_DURATION</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10309</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DISTANCE_TRAVELED</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DISTANCE_TRAVELED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DISTANCE_TRAVELED</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NUM_OF_PASSENGERS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NUM_OF_PASSENGERS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NUM_OF_PASSENGERS</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FARE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FARE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FARE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>369</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TIP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TIP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TIP</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MISCELLANEOUS_FEES</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MISCELLANEOUS_FEES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MISCELLANEOUS_FEES</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL_FARE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TOTAL_FARE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOTAL_FARE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1183</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SURGE_APPLIED</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SURGE_APPLIED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SURGE_APPLIED</remote-alias>
+              <ordinal>7</ordinal>
+              <family>sql_data_export.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:SURGE_APPLIED:ok]' palette='sf_light' type='palette'>
+            <map to='#3296ed'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#77b9f2'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='sql_data_export.csv' id='sql_data_export.csv_61A9BE68292C42D488D443474FA54CBE'>
+            <properties context=''>
+              <relation connection='textscan.0pfoicr19mzxwg1d9umnp0nrj8ek' name='sql_data_export.csv' table='[sql_data_export#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='TRIP_DURATION' ordinal='0' />
+                  <column datatype='integer' name='DISTANCE_TRAVELED' ordinal='1' />
+                  <column datatype='integer' name='NUM_OF_PASSENGERS' ordinal='2' />
+                  <column datatype='integer' name='FARE' ordinal='3' />
+                  <column datatype='integer' name='TIP' ordinal='4' />
+                  <column datatype='integer' name='MISCELLANEOUS_FEES' ordinal='5' />
+                  <column datatype='integer' name='TOTAL_FARE' ordinal='6' />
+                  <column datatype='integer' name='SURGE_APPLIED' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AVERAGE DISTANCE (KM)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='Distance Traveled' datatype='integer' name='[DISTANCE_TRAVELED]' role='measure' type='quantitative' />
+            <column-instance column='[DISTANCE_TRAVELED]' derivation='Avg' name='[avg:DISTANCE_TRAVELED:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1teig920ircbik13nqmgx16vvp6m].[avg:DISTANCE_TRAVELED:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.1teig920ircbik13nqmgx16vvp6m].[avg:DISTANCE_TRAVELED:qk]</run>
+                <run bold='true' fontsize='14'>&gt; KM</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D32E4170-796F-4B8D-B990-7D280FD31983}' />
+    </worksheet>
+    <worksheet name='AVERAGE RIDE FARE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='Fare' datatype='integer' name='[FARE]' role='measure' type='quantitative' />
+            <column-instance column='[FARE]' derivation='Avg' name='[avg:FARE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1teig920ircbik13nqmgx16vvp6m].[avg:FARE:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.1teig920ircbik13nqmgx16vvp6m].[avg:FARE:qk]</run>
+                <run bold='true' fontsize='14'>&gt; INR</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D92175F2-3F6A-4355-A303-7BCA529E3C3D}' />
+    </worksheet>
+    <worksheet name='AVERAGE TIP PER RIDE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column datatype='integer' name='[TIP]' role='measure' type='quantitative' />
+            <column-instance column='[TIP]' derivation='Avg' name='[avg:TIP:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1teig920ircbik13nqmgx16vvp6m].[avg:TIP:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.1teig920ircbik13nqmgx16vvp6m].[avg:TIP:qk]</run>
+                <run bold='true' fontsize='14'>&gt; INR</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{47B80AEF-BA69-4515-A696-4FD86BF4C0EF}' />
+    </worksheet>
+    <worksheet name='AVERAGE TRIP DURATION'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='AVG([Trip Duration])/60' datatype='real' name='[Calculation_124693460573253634]' role='measure' type='quantitative' user:unnamed='AVERAGE TRIP DURATION'>
+              <calculation class='tableau' formula='AVG([TRIP_DURATION])/60' />
+            </column>
+            <column caption='Trip Duration' datatype='integer' name='[TRIP_DURATION]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_124693460573253634]' derivation='User' name='[usr:Calculation_124693460573253634:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1teig920ircbik13nqmgx16vvp6m].[usr:Calculation_124693460573253634:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.1teig920ircbik13nqmgx16vvp6m].[usr:Calculation_124693460573253634:qk]</run>
+                <run bold='true' fontsize='14'>&gt; Mins</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{72E82B90-63C7-44D2-BEBB-28A9E6FC57CF}' />
+    </worksheet>
+    <worksheet name='CORRELATION BETWEEN NUMBER OF PASSENGERS AND FARE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='Num Of Passengers' datatype='integer' name='[NUM_OF_PASSENGERS]' role='measure' type='quantitative' />
+            <column caption='Total Fare' datatype='integer' name='[TOTAL_FARE]' role='measure' type='quantitative' />
+            <column-instance column='[NUM_OF_PASSENGERS]' derivation='None' name='[none:NUM_OF_PASSENGERS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL_FARE]' derivation='None' name='[none:TOTAL_FARE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1teig920ircbik13nqmgx16vvp6m].[Exclusions (Num Of Passengers,Total Fare)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:NUM_OF_PASSENGERS:qk]' />
+                <groupfilter function='level-members' level='[none:TOTAL_FARE:qk]' />
+              </groupfilter>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:NUM_OF_PASSENGERS:qk]' member='1' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3104' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3303' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3494' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3858' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3887' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3970' />
+                    <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='4472' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:NUM_OF_PASSENGERS:qk]' member='2' />
+                  <groupfilter function='member' level='[none:TOTAL_FARE:qk]' member='3910' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1teig920ircbik13nqmgx16vvp6m].[Exclusions (Num Of Passengers,Total Fare)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1teig920ircbik13nqmgx16vvp6m].[none:NUM_OF_PASSENGERS:qk]' palette='orange_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1teig920ircbik13nqmgx16vvp6m].[none:NUM_OF_PASSENGERS:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1teig920ircbik13nqmgx16vvp6m].[none:NUM_OF_PASSENGERS:qk]</rows>
+        <cols>[federated.1teig920ircbik13nqmgx16vvp6m].[none:TOTAL_FARE:qk]</cols>
+      </table>
+      <simple-id uuid='{9E3524E2-33B4-45C6-97F4-874001BCA775}' />
+    </worksheet>
+    <worksheet name='NUMBER OF TIMES SURGE WAS APPLIED'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='SURGE' datatype='string' name='[Calculation_124693460575907843]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [SURGE_APPLIED] = 1 THEN &quot;YES&quot;&#13;&#10;ELSE &quot;NO&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Surge Applied' datatype='integer' name='[SURGE_APPLIED]' role='measure' type='quantitative' />
+            <column-instance column='[SURGE_APPLIED]' derivation='Count' name='[cnt:SURGE_APPLIED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124693460575907843]' derivation='None' name='[none:Calculation_124693460575907843:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SURGE_APPLIED]' derivation='None' name='[none:SURGE_APPLIED:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='rows' value='dashed' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1teig920ircbik13nqmgx16vvp6m].[none:SURGE_APPLIED:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>SURGE:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1teig920ircbik13nqmgx16vvp6m].[none:Calculation_124693460575907843:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1teig920ircbik13nqmgx16vvp6m].[cnt:SURGE_APPLIED:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1teig920ircbik13nqmgx16vvp6m].[cnt:SURGE_APPLIED:qk]</rows>
+        <cols>[federated.1teig920ircbik13nqmgx16vvp6m].[none:Calculation_124693460575907843:nk]</cols>
+      </table>
+      <simple-id uuid='{F101DA6B-78FE-4167-A7B2-E688D35B374C}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sql_data_export' name='federated.1teig920ircbik13nqmgx16vvp6m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1teig920ircbik13nqmgx16vvp6m'>
+            <column caption='INDEX' datatype='integer' name='[Calculation_124693460577681412]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Distance Traveled' datatype='integer' name='[DISTANCE_TRAVELED]' role='measure' type='quantitative' />
+            <column caption='Total Fare' datatype='integer' name='[TOTAL_FARE]' role='measure' type='quantitative' />
+            <column-instance column='[DISTANCE_TRAVELED]' derivation='Sum' name='[sum:DISTANCE_TRAVELED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL_FARE]' derivation='Sum' name='[sum:TOTAL_FARE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_124693460577681412]' derivation='User' name='[usr:Calculation_124693460577681412:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1teig920ircbik13nqmgx16vvp6m].[usr:Calculation_124693460577681412:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1teig920ircbik13nqmgx16vvp6m].[sum:TOTAL_FARE:qk]</rows>
+        <cols>[federated.1teig920ircbik13nqmgx16vvp6m].[sum:DISTANCE_TRAVELED:qk]</cols>
+      </table>
+      <simple-id uuid='{F3D373F0-53B9-42CF-9C11-AFA8ECB2E990}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='AVERAGE RIDE FARE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BE683346-C204-492F-8A91-FC794CAC8C2D}' />
+    </window>
+    <window class='worksheet' name='AVERAGE DISTANCE (KM)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{860E7B6C-1B47-4BBA-84B3-7F06269CE02C}' />
+    </window>
+    <window class='worksheet' name='AVERAGE TIP PER RIDE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{27CB6274-9AE3-4321-B628-A33932BE6034}' />
+    </window>
+    <window class='worksheet' name='AVERAGE TRIP DURATION'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7BF69BD3-3DA5-428D-A1D0-E99589FC514F}' />
+    </window>
+    <window class='worksheet' name='CORRELATION BETWEEN NUMBER OF PASSENGERS AND FARE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1teig920ircbik13nqmgx16vvp6m].[none:NUM_OF_PASSENGERS:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F4A766AA-5CD8-4484-8F1E-AEA847836753}' />
+    </window>
+    <window class='worksheet' name='NUMBER OF TIMES SURGE WAS APPLIED'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1teig920ircbik13nqmgx16vvp6m].[none:SURGE_APPLIED:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2AFD857D-F6BA-4102-BB95-D9869D26F43C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A729F62-7DF4-4B26-915E-CB738978D98D}' />
+    </window>
+  </windows>
+</workbook>
