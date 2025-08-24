@@ -8,3 +8,6 @@ miscellaneous_fees decimal,
 total_fare decimal,
 surge_applied int
 );
+
+select * from PROJECT.PUBLIC.RIDE 
+LIMIT 20;
