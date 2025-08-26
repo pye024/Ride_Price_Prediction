@@ -29,6 +29,8 @@ model = joblib.load("models/lightgbm.pkl")
 
 st.title("Ride Fare Prediction (India)")
 
+with st.sidebar:
+    st.write("This project is an end-to-end data science project that predicts the fare of a cab or van ride. The project includes data cleaning, exploratory data analysis, model training, and a Streamlit web application for inference. The project uses a variety of technologies including Python, SQL, Snowflake, Tableau, and Docker.")
 col1, col2 = st.columns(2)
 with col1:
     Pickup_Location = st.selectbox("Pickup Location", options=list(ADDRESSES.keys()))
