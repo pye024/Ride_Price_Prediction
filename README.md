@@ -4,6 +4,9 @@
 
 This project is an end-to-end data science project that predicts the fare of a cab or van ride. The project includes data cleaning, exploratory data analysis, model training, and a Streamlit web application for inference. The project uses a variety of technologies including Python, SQL, Snowflake, Tableau, and Docker.
 
+
+Try here on Streamlit cloud
+https://ridefareprediction.streamlit.app/
 ## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Snowflake](https://img.shields.io/badge/Snowflake-2C9DCB?logo=snowflake&logoColor=white) ![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-88d4df.svg) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-006600?logo=xgboost&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-88d4df.svg) ![SHAP](https://img.shields.io/badge/SHAP-008BFB.svg) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
