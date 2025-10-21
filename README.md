@@ -1,5 +1,4 @@
 # Ride Price Prediction
-
 ## Project Overview
 
 This project is an end-to-end data science project that predicts the fare of a cab or van ride. The project includes data cleaning, exploratory data analysis, model training, and a Streamlit web application for inference. The project uses a variety of technologies including Python, SQL, Snowflake, Tableau, and Docker.
